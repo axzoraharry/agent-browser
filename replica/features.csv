@@ -1,0 +1,40 @@
+feature,area,priority,original,clone,notes
+Host account required to publish a link,onboarding,must,yes,no,Guests do not need an account. Signup screen was not opened; email vs Google sign-up is unconfirmed.
+Connect Google or Outlook and choose conflict calendars plus a destination calendar,onboarding,must,yes,no,https://calendly.com/help/how-to-set-up-an-event-type
+Weekly hours on a schedule with one time zone,availability,must,yes,no,https://calendly.com/help/time-zones-overview
+Date-specific hours and blocked dates,availability,must,yes,no,FAQ: busy calendar events or date overrides hide slots
+One-on-one event type with name duration and location,event types,must,yes,no,Location kinds include video phone and in person. Type cannot be converted later.
+Turn an event type on or off,event types,must,yes,no,FAQ lists a turned-off event as a reason a host looks unavailable
+Public booking page that lists only open slots,booking page,must,yes,no,Slots respect hours buffers limits notice and calendar conflicts
+Guest books with name and email and no account,booking page,must,yes,no,https://calendly.com/help/scheduling-faq
+Refuse a second confirmed booking on an overlapping slot,booking page,must,yes,no,Inferred from real-time conflict checks. Hold the slot at submit time.
+Confirmation email to the guest and notice to the host,notifications,must,yes,no,FAQ: email on book reschedule and cancel
+Guest reschedules from a link without logging in,booking page,must,yes,no,https://calendly.com/help/how-to-include-cancel-and-reschedule-links-for-invitees
+Guest cancels from a link and the slot frees,booking page,must,yes,no,Written cancellation policy does not enforce a cutoff
+Host reschedules or cancels from the Calendar page,meetings,must,yes,no,Free-plan host reschedule uses the public booking page
+Guest time zone detected with a manual override,booking page,must,yes,no,https://calendly.com/help/time-zones-overview
+Buffer before and after a meeting,availability,should,yes,no,Set under Limits and buffers
+Cap bookings per day week or month,availability,should,yes,no,Same section as buffers
+Minimum notice and how far ahead a guest may book,availability,should,yes,no,FAQ describes both. Exact control labels were not copied
+Start-time increments on the booking page,booking page,should,yes,no,Booking page options
+Custom questions on the invitee form,booking page,should,yes,no,Name and email stay required. https://calendly.com/help/advanced-booking-form-features
+Email reminder before the meeting,notifications,should,yes,no,Configured in automations
+Video or phone location stored on the event,integrations,should,yes,no,Connecting a conferencing provider was not read in detail
+Take payment when the guest books,payments,should,yes,no,Stripe or PayPal on a paid plan. https://calendly.com/help/how-to-customize-your-event-types
+Preview plus a troubleshoot list for a closed time,availability,should,yes,no,Preview then Troubleshoot on the event type
+Lock the booking page to one time zone,booking page,should,yes,no,Recommended for in-person events
+Single-use scheduling link,sharing,should,yes,no,Mentioned in the scheduling FAQ
+Cancellation policy text on the cancel path,booking page,should,yes,no,Display only
+Round-robin or other multi-host event types,team,could,yes,no,Out of the core loop. Reschedule can keep or replace the assigned host
+Embed the booking page inline or as a popup,sharing,could,yes,no,https://calendly.com/help/calendly-embed-and-the-api
+Text-message reminders,notifications,could,yes,no,FAQ mentions text reminders. Delivery provider unknown
+Meeting polls,scheduling,could,yes,no,Tab on the Scheduling page. Not part of the core loop
+Routing forms,scheduling,could,yes,no,Same navigation article. Enterprise routing stays skip
+Read event types and busy times from a public API,integrations,could,yes,no,Public docs only. Do not copy their API as a private surface
+Marketplace of third-party apps,integrations,could,yes,skip,Partner network is not a feature to rebuild
+Salesforce or Dynamics lead routing,team,could,yes,skip,Enterprise. Their customer connections
+SSO SAML domain control and audit log,admin,could,yes,skip,https://calendly.com/pricing enterprise list
+Admin-managed event types and org roles,admin,could,yes,skip,Mentioned as a separate editing path
+Browser extensions,sharing,could,yes,skip,Distribution in browser stores is not the product loop
+Their name logo marketing copy and help articles,brand,could,yes,skip,Clean-room. New name and words before any launch
+Existing hosts guests and booked history,data,could,yes,skip,The network and the data the product already stores
